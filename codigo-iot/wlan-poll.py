@@ -12,8 +12,7 @@ def do_connect():
     if not sta_if.isconnected():
         print('connecting to network...')
         sta_if.active(True)
-        sta_if.connect('LIVE TIM_41F9_2G', '2pxtrvv3hd')
-#        sta_if.connect('Iot Smart House', 'IotSmartHousei8#!')
+        sta_if.connect('Iot Smart House', 'IotSmartHousei8#!')
         while not sta_if.isconnected():
             pass
     print('network config:', sta_if.ifconfig())
